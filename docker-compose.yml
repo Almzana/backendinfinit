@@ -1,0 +1,9 @@
+services:
+  web:
+    build: .
+    image: systeminfinit:latest
+    container_name: systeminfinit
+    ports:
+      # Host port is configurable: HOST_PORT=3001 docker compose up -d
+      - "${HOST_PORT:-3000}:3000"
+    restart: unless-stopped
