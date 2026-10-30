@@ -1,0 +1,25 @@
+# Rebuilt inside the image
+node_modules
+.next
+out
+build
+*.tsbuildinfo
+next-env.d.ts
+
+# Not needed for the build
+.git
+.github
+.claude
+.vscode
+.idea
+*.md
+bun.lockb
+Dockerfile
+docker-compose.yml
+.dockerignore
+
+# Never send secrets into the build context
+.env
+.env.*
+*.pem
+npm-debug.log*
